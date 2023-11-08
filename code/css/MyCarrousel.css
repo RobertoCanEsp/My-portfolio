@@ -1,0 +1,48 @@
+section.MyCarrousel{
+    height: 100vh;
+    overflow-x: hidden;
+}
+section.MyCarrousel h2{
+    position: absolute;
+    z-index: 1;
+}
+
+section.MyCarrousel span{
+    --size: 50px;
+    --padding: 24px;
+    position: absolute;
+    right: 0;
+    margin-top: calc(50vh - (var(--size)/2) - var(--padding));
+    margin-right: 2vw;
+    z-index: 1;
+    user-select: none;
+    font-size: var(--size);
+    padding: var(--padding);
+    border: 2px solid var(--contrast-color);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+section.MyCarrousel span:hover{ opacity: .6; }
+
+section.MyCarrousel dl{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    height: 100%;
+    overflow-x: hidden;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+section.MyCarrousel dd{
+    flex: 0 0 auto;
+    width: calc(100vw - 2px);
+    height: calc(100% - 2px);
+    background-color: var(--main-color);
+    border: 1px solid var(--contrast-color);
+}
