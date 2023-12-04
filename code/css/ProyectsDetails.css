@@ -1,0 +1,229 @@
+section.ProjectDetails{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0);
+}
+section.ProjectDetails .ProjectBG{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+}
+section.ProjectDetails.show{  top: 0; }
+section.ProjectDetails .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid var(--contrast-color);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+    user-select: none;
+}
+section.ProjectDetails .Container{
+    position: relative;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 14px 14px 14px var(--contrast-color);        
+}
+
+@media screen and (max-width: 959px){
+    section.ProjectDetails .Container{
+        width: 90vw;
+        height: 86vh;     
+        margin:7vh auto;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    section.ProjectDetails .Container div{
+        width: 95%;
+        margin: auto;
+    }
+    section.ProjectDetails .Container div.titleInfo{
+        margin-top: 1vh;
+        text-align: center;
+    }
+    section.ProjectDetails .Container div:last-of-type{
+        width: 90%;
+        margin: 2vh auto 0;
+    }
+    #title{
+        font-size: 8vw;
+        padding-top: 2vh;
+    }
+    #titleDetails{
+        font-size: 4vw;
+        margin-top: 1vw;
+    }
+    /* estilos del div que contiene al carrusel */
+    section.ProjectDetails .Container div.carrousel{
+        height: calc(80vw - 20vw); 
+        width: 86vw;
+        display: flex;
+        align-items: center;
+    }
+    section.ProjectDetails .Container div.carrousel .lastWrap{ 
+        width: 100%; 
+        height: 100%;
+    }
+    section.ProjectDetails .Container div.carrousel .lastWrap dl dd{ 
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        flex: 0 0 auto;
+        background-color: blue;
+    }
+    section.ProjectDetails .Container div.carrousel img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}@media screen and (min-width: 960px){
+    section.ProjectDetails .Container{
+        width: 80vw;
+        height: 80vh;  
+        margin:10vh auto;   
+    }
+    section.ProjectDetails .Container{
+        display: flex;
+        align-items: center;
+    }
+    section.ProjectDetails .Container div{
+        width: 55%;
+        margin: auto;
+    }
+    section.ProjectDetails .Container div.titleInfo{
+        position: absolute;
+        top: 0;
+        right: 0;    
+        width: 36%;
+        padding-right: 3%;
+        margin-top: 2vh;
+        text-align: left;
+    }
+    section.ProjectDetails .Container div:last-of-type{
+        width: 36%;
+        padding-right: 3%;
+        padding-top: 4vh;
+    }
+    #title{
+        font-size: 7vh;
+        margin-left: -2vw;
+    }
+    #titleDetails{
+        font-size: 3vh;
+        margin-bottom: 3vh;
+    }
+    section.ProjectDetails .Container div.carrousel .lastWrap{ 
+        width: 100%; 
+        height: 100%;
+    }
+
+    /* estilos del div que contiene al carrusel */
+    section.ProjectDetails .Container div.carrousel{
+        height: 80%; 
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    section.ProjectDetails .Container div.carrousel .lastWrap dl dd{ 
+        width: 90%;
+        margin: 5%;
+        flex: 0 0 auto;
+    }
+    section.ProjectDetails .Container div.carrousel img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+section.ProjectDetails .Container div.carrousel span{
+    margin: 10px;
+    padding: 8px;
+    font-size: 24px;
+    border: 2px solid var(--contrast-color);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+    user-select: none;
+}
+section.ProjectDetails .Container div.carrousel .lastWrap{ 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+section.ProjectDetails .Container div.carrousel .lastWrap dl{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+#text{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 1vh;
+}
+.subTheme{
+    margin-left: -1vw;
+    margin-bottom: 1vh;
+}
+#DevTime{
+    margin-bottom: 1vh;
+}
+
+section.ProjectDetails .info dl{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    margin-bottom: 2vh;
+}
+section.ProjectDetails .info dd{
+    border: 2px solid var(--contrast-color);
+    padding:6px;
+    user-select: none;
+}
+
+section.ProjectDetails .info dl.Links dd{
+    margin: auto;
+    padding: 8px;
+    margin-top: 2vh;
+    border-radius: 10px;
+    border-color: rgb(31, 223, 31);
+    background-color: rgb(31, 223, 31);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section.ProjectDetails .info dl.Links dd:hover{
+    cursor: pointer;
+    user-select: none;
+    opacity: .6;
+}

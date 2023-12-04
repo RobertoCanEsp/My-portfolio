@@ -1,5 +1,23 @@
+@media screen and (max-width: 959px){
+    section.MyCarrousel{
+        height: 100vw;
+    }    
+    section.MyCarrousel span{
+        --size: 34px;
+        --padding: 14px;
+        margin-top: calc(50% - ( var(--size) / 2 ) - var(--padding));
+    }
+}@media screen and (min-width: 960px){
+    section.MyCarrousel{
+        height: 100vh;
+    }
+    section.MyCarrousel span{
+        --size: 50px;
+        --padding: 24px;
+        margin-top: calc(50vh - ( var(--size) / 2 ) - var(--padding));
+    }
+}
 section.MyCarrousel{
-    height: 100vh;
     overflow-x: hidden;
 }
 section.MyCarrousel h2{
@@ -8,11 +26,8 @@ section.MyCarrousel h2{
 }
 
 section.MyCarrousel span{
-    --size: 50px;
-    --padding: 24px;
     position: absolute;
     right: 0;
-    margin-top: calc(50vh - (var(--size)/2) - var(--padding));
     margin-right: 2vw;
     z-index: 1;
     user-select: none;

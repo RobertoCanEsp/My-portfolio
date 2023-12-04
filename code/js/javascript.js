@@ -1,4 +1,3 @@
-
 var slider = document.getElementById("sliderContainer"), cards = slider.getElementsByTagName("dd");
 var firstCarrouselIndex = 1;
 
@@ -14,8 +13,6 @@ slider.addEventListener('transitionend', () => {
 }); 
 
 
-
-    //* funciones
 function ChangeTheme(){ //TODO: cambiar tema/apariencia de la pagina
     document.getElementById("Real_body").classList.toggle("dark");
     document.getElementById("dark_mode").classList.toggle("active");
@@ -34,3 +31,4 @@ function NextCoverCard(){//TODO: cambia a la siguiente tarjeta del carrousel o e
     }
     TimeCarrousel = setTimeout(NextCoverCard, 10000);
 }
+

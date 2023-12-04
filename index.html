@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio</title>
+        <title>RCE Works</title>
 
         <!-- Estilos de la pagina -->
         <link rel="stylesheet" href="code/css/Global.css">
 
         <link rel="stylesheet" href="code/css/MyCarrousel.css">
         <link rel="stylesheet" href="code/css/MyProfile.css">
+
+        <link rel="stylesheet" href="code/css/MyWorks.css">
+        <link rel="stylesheet" href="code/css/ProyectsDetails.css">
 
         <link rel="stylesheet" href="code/css/footer.css">
         
@@ -48,9 +51,34 @@
                         <a href="sources/docs/Curriculum.pdf" target="_blank">Descarga mi CV</a>
                     </div>
                 </div>
+                <br>
             </section>
+            
+            <hr class="HollowSpace">
 
-
+            <section class="MyWorks">
+                <br><br>
+                <h2>Mis trabajos</h2>
+                <dl>
+                    <dd onclick="ViewProject('GAME');">
+                        <p class="title">Juego de ingles</p>
+                        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,w_1200/ncom/en_US/articles/2023/play-three-iconic-persona-games-on-nintendo-switch-persona-3-portable-persona-4-golden-and-persona-5-royal/1280x720_Persona_Protag_Keyart" alt="">
+                    </dd>
+                    <dd onclick="ViewProject('SHOP');">
+                        <p>Tienda de ropa</p>
+                        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/n/nier-automata-the-end-of-yorha-edition-switch/hero" alt="">
+                    </dd>
+                    <dd onclick="ViewProject('APP');">
+                        <p>app de música</p>
+                        <img src="https://images2.alphacoders.com/131/1316526.png" alt="">
+                    </dd>
+                    <dd onclick="ViewProject('THIS');">
+                        <p>Esta misma pagina</p>
+                        <img src="https://i.redd.it/iogx5ag3imh61.png" alt="">
+                    </dd>
+                </dl>
+                <br><br><br>
+            </section>
 
             <footer>
                 <p>pagina web desarrollada con: 
@@ -67,7 +95,79 @@
             <span id="dark_mode" class="material-symbols-outlined">dark_mode</span>
             <span id="light_mode" class="material-symbols-outlined active">light_mode</span>
         </div>
+
+
+        <section class="ProjectDetails" id="ProjectDetails">
+            <hr class="ProjectBG"  onclick="CloseProjectInfo();">
+            <span onclick="CloseProjectInfo();" class="close material-symbols-outlined">close</span>
+
+            <div class="Container">
+                <div class="titleInfo">
+                    <h5 id="title">TITULO</h5>
+                    <h6 id="titleDetails">subtitulo</h6>
+                </div>
+                
+                <div class="carrousel">
+                    <span id="BackEvidence" onclick="LastEvidence()" class="material-symbols-outlined opaco"> navigate_before </span>
+                    
+                    <div class="lastWrap">
+                        <dl class="ProjectCarrousel quit" id="GameEvidence">
+                            <dd><img src="https://e1.pxfuel.com/desktop-wallpaper/956/225/desktop-wallpaper-anime-sky-scenery-7984-anime-sky.jpg" alt=""></dd>
+                            <dd><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt=""></dd>
+                            <dd><img src="https://images6.alphacoders.com/131/1316523.jpeg" alt=""></dd>
+                        </dl>
+                        <dl class="ProjectCarrousel quit" id="ShopEvidence">
+                            <dd><img src="https://e1.pxfuel.com/desktop-wallpaper/956/225/desktop-wallpaper-anime-sky-scenery-7984-anime-sky.jpg" alt=""></dd>
+                            <dd><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt=""></dd>
+                            <dd><img src="https://images6.alphacoders.com/131/1316523.jpeg" alt=""></dd>
+                        </dl>
+                        <dl class="ProjectCarrousel quit" id="AppEvidence">
+                            <dd><img src="https://e1.pxfuel.com/desktop-wallpaper/956/225/desktop-wallpaper-anime-sky-scenery-7984-anime-sky.jpg" alt=""></dd>
+                            <dd><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt=""></dd>
+                            <dd><img src="https://images6.alphacoders.com/131/1316523.jpeg" alt=""></dd>
+                        </dl>
+                        <dl class="ProjectCarrousel quit" id="ThisEvidence">
+                            <dd><img src="https://e1.pxfuel.com/desktop-wallpaper/956/225/desktop-wallpaper-anime-sky-scenery-7984-anime-sky.jpg" alt=""></dd>
+                            <dd><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt=""></dd>
+                            <dd><img src="https://images6.alphacoders.com/131/1316523.jpeg" alt=""></dd>
+                        </dl>
+                    </div>
+
+                    <span id="NextEvidence" onclick="NextEvidence()" class="material-symbols-outlined"> navigate_next </span>
+                </div>
+                
+                <div class="info">
+                    <p id="text">texto</p>
+                    <h5 class="subTheme">lenguajes:</h5>
+                    <dl class="idioms">
+                        <dd id="js">javascript</dd> 
+                        <dd id="htmlYcss"><span>html y css</span></dd> 
+                        <dd id="Java">Java</dd> 
+                        <dd id="SQL">SQL</dd> 
+                        <dd id="Php">Php</dd> 
+                    </dl>
+                    <h5 class="subTheme">software:</h5>
+                    <dl class="software">
+                        <dd id="VScode">Visual Studio Code</dd>
+                        <dd id="Photo">Photoshop</dd>
+                        <dd id="Illus">Illustrator</dd>
+                        <dd id="Krita">Krita</dd>
+                        <dd id="Net">Netbeans</dd>
+                        <dd id="And">android Studio</dd>
+                    </dl>
+                    <h5 class="subTheme">Tiempo de desarrollo:</h5>
+                    <p id="DevTime"></p>
+                    <dl class="Links">
+                        <dd><a id="RAR" target="_blank" href="">Descargar proyecto</a></dd>
+                        <dd><a id="EXE" target="_blank" href="">Descargar ejecutables</a> </dd> 
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+
     </body>
 
     <script src="code/js/javascript.js"></script>
+    <script src="code/js/ProjectsDetails.js"></script>
 </html>
