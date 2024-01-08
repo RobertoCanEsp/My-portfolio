@@ -68,7 +68,7 @@ function ViewProject(ProjectName){
         case "THIS":
             titulo = "Mi portafolio";
             detallesTitulo = "una muestra de mi trabajo";
-            texto = "con esta pagina mi intención es dar a conocer lo que se hacer, esta pagina fue realizada en mis tiempos libres y trate de no buscar lo menos posible de información y hacer la pagina con el con mi propio conocimiento";
+            texto = "con esta pagina mi intención es dar a conocer lo que se hacer, esta pagina fue realizada en mis tiempos libres y trate de buscar lo menos posible de información y hacer la pagina con el con mi propio conocimiento";
 
             js.classList.remove("quit"); htmlYcss.classList.remove("quit");
             vs.classList.remove("quit"); krita.classList.remove("quit");
