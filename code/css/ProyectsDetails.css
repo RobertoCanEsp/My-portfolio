@@ -85,13 +85,9 @@ section.ProjectDetails .Container{
         height: 100%;
         margin: 0%;
         flex: 0 0 auto;
-        
-}
-    section.ProjectDetails .Container div.carrousel img{
-        width: 100%;
-        height: auto;
-        margin: auto;
     }
+
+
 }@media screen and (min-width: 960px){
     section.ProjectDetails .Container{
         width: 80vw;
@@ -153,7 +149,11 @@ section.ProjectDetails .Container{
         margin: auto;
     }
 }
-
+#AppEvidence dd img{
+    width: auto;
+    margin: auto;
+    height: 60vh;
+}
 section.ProjectDetails .Container div.carrousel span{
     margin: 10px;
     padding: 8px;
