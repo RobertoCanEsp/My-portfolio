@@ -85,8 +85,8 @@ section.ProjectDetails .Container{
         height: 100%;
         margin: 0%;
         flex: 0 0 auto;
-        background-color: blue;
-    }
+        
+}
     section.ProjectDetails .Container div.carrousel img{
         width: 100%;
         height: auto;
